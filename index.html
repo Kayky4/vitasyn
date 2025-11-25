@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VitaSyn - Plataforma de Saúde Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#3A5AFE', // Primary
+                700: '#1A2FCC',
+                300: '#6E8CFF',
+              },
+              accent: '#00D8B4',
+              neutral: {
+                900: '#0E0E11',
+                800: '#1F1F23',
+                500: '#6F6F75',
+                100: '#F3F4F6',
+              },
+              surface: '#FFFFFF',
+              danger: '#FF4F4F',
+              success: '#2ECC71',
+            },
+            fontFamily: {
+              // Unificando tudo para Inter
+              serif: ['"Inter"', 'sans-serif'], 
+              sans: ['"Inter"', 'sans-serif'],
+            },
+            backgroundImage: {
+              'gradient-primary': 'linear-gradient(135deg, #3A5AFE, #6E8CFF)',
+              'gradient-accent': 'linear-gradient(135deg, #00D8B4, #3A5AFE)',
+            },
+            borderRadius: {
+              'main': '12px',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F9FAFB;
+        color: #0E0E11;
+        font-family: 'Inter', sans-serif;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #CBD5E1;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94A3B8;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "firebase/": "https://aistudiocdn.com/firebase@^12.6.0/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "next": "https://aistudiocdn.com/next@^16.0.3",
+    "micro": "https://aistudiocdn.com/micro@^10.0.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

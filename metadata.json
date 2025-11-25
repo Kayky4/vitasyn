@@ -1,0 +1,5 @@
+{
+  "name": "VitaSyn - Plataforma Integrada de Saúde",
+  "description": "Uma plataforma de saúde premium conectando pacientes a profissionais via videoconsultas, com pagamentos Stripe e integração com Google Agenda.",
+  "requestFramePermissions": []
+}
